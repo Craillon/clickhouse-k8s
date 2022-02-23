@@ -4,8 +4,14 @@ metadata:
   name: "cluster-01"
 spec:
   configuration:
+    users:
+        admin/password_sha256_hex : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+        admin/networks/ip: "0.0.0.0/0"
+        admin/profile: default
+        admin/quota: default
     clusters:
       - name: "cluster-01"
         layout:
           shardsCount: 2
           replicasCount: 1
+          
